@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blinkit.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="icon/image" href="D:\1sthtml\blinkit\blinkitimg\favicon.png">
+  <title>Everything delivered in minutes</title>
+</head>
+
+<body>
+  <header>
+    <div id="headerleft">
+      <div id="logo"><a href="#banner"><img src="C:\Users\HP\Downloads\blinkitimg\download.png"></a></div>
+      <div id="location">
+        <h3>Delivery in 8 minutes</h3>
+        <p onclick="agya()">758,Krishanpur Panipat 132...</p>
+      </div>
+    </div>
+    <div id="headerSearch">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      <input type="text" placeholder="search 'medicine'">
+    </div>
+    <div id="headerbtn">
+      <div id="btn1"><button id="login-btn" onclick="appearLogin()">Login</button></div>
+      <div id="btn2" onclick="openCart()"><button><i class="fa-solid fa-cart-shopping"></i> My Cart</button></div>
+    </div>
+  </header>
+  <div id="cart-collection">
+    <div id="cart-collection-info">
+    <button id="close-my-cart" onclick="closeCart()">&times;</button>
+    <h2>My Cart</h2>
+  </div>
+  </div>
+  <div id="overlay"></div>
+  <div id="login-box">
+    <div id="back"> <button id="back-btn" onclick="disAppearLogin()"><i class="fa-solid fa-arrow-left"></i></button></div>
+    <img src="D:\1sthtml\blinkit\blinkitimg\favicon.png" alt="" width="100px" height="100px">
+    <h2>India's last minute app</h2>
+    <p><b>Log in or Sign up</b></p><div id="number-input">
+      <button>+91</button><input type="text" placeholder="Enter mobile number" id="number"></div>
+      <div id="continue-btn">
+    <button id="Continue">Continue</button></div>
+    <p class="newPara">By continuing, you agree to our Terms of service & Privacy policy</p>
+  </div>
+  <div id="location-box">
+    <button id="cut-btn" onclick="gayab()">&times;</button>
+    <p id="location-para">Change Location</p>
+    <div id="location-box-content">
+      <button>Detect my location</button>
+      <p class="or">OR</p>
+      <input type="text" placeholder="search delivery location">
+    </div>
+  </div>
+  <section id="banner">
+    <img src="C:\Users\HP\Downloads\blinkitimg\banner.webp" alt="">
+  </section>
+
+  <section id="orderbanner">
+    <div class="orderbannerItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\pharmacy-WEB.avif" alt="" onclick="openPharma()">
+    </div>
+    <div id="pharmacy"> <h1>pharpamcy</h1></div>
+    <div class="orderbannerItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Pet-Care_WEB.avif" alt="">
+    </div>
+    <div class="orderbannerItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\babycare-WEB.avif" alt="">
+    </div>
+  </section>
+       
+  <section id="catagories">
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-5_4.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="D:\1sthtml\blinkit\blinkitimg\Slice-6_5.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="D:\1sthtml\blinkit\blinkitimg\Slice-7_3.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-5_4.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-8_4.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-9_3.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-10.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-11.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-12.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-13.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-14.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-15.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-16.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-17.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-18.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-19.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-20.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="D:\1sthtml\blinkit\blinkitimg\cock.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="D:\1sthtml\blinkit\blinkitimg\paan-corner_web.avif" alt="">
+    </div>
+    <div id="catagoryItems">
+      <img src="C:\Users\HP\Downloads\blinkitimg\Slice-5_4.avif" alt="">
+    </div>
+  </section>
+
+  <section id="productSection">
+    <div class="headingSection">
+      <h2>Dairy, Breads & Eggs</h2>
+      <a href="#">See all</a>
+    </div>
+
+    <div id="products">
+      <div class="productItem">
+        <div id="productimg">
+          <img src="C:\Users\HP\Downloads\blinkitimg\MILK.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Amul Taaza Toned Fresh Milk</h3>
+          <p>500 ml</p>
+          <div class="price-btn">
+            <b>₹ 27</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="C:\Users\HP\Downloads\blinkitimg\Amul masti.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Amul masti pauch courd</h3>
+          <p>400 g</p>
+          <div class="price-btn">
+            <b>₹ 35</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\AMUL BUTTUR.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <br>
+          <h3>Amul salted butter</h3>
+          <p>100 g</p>
+          <div class="price-btn">
+            <b>₹ 100</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\BREAD2.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Harevest gold 100% atta whole weat bread</h3>
+          <p>450 g</p>
+          <div class="price-btn">
+            <b>₹ 60</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\BREAD3.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>English Oven 100% atta bread</h3>
+          <p>400 g</p>
+          <div class="price-btn">
+            <b>₹ 55</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem item">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\AMUL2.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Amul masti 100% pure pouch curd</h3>
+          <p>1 kg</p>
+          <div class="price-btn">
+            <b>₹ 75</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headingSection">
+      <h2>Snacks & Munchies</h2>
+      <a href="#">See all</a>
+    </div>
+
+    <div id="products">
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\2.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Orion Turtle Masala Lime Corn Chip</h3>
+          <p>195 g</p>
+          <div class="price-btn">
+            <b>₹ 95</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\3.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Orion Korean Kimchi k Snacks Rings</h3>
+          <p>70 g</p>
+          <div class="price-btn">
+            <b>₹ 54</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\4.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Cheatos Flamin Hot Chrunchi Puffs</h3>
+          <p>28.3 g</p>
+          <div class="price-btn">
+            <b>₹ 161</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\9.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>kab's Jackpot Fire Ball Snacks</h3>
+          <p>60 g</p>
+          <div class="price-btn">
+            <b>₹ 65</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\6.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Cheatos Cheap Flavered Puffs</h3>
+          <p>24.3g</p>
+          <div class="price-btn">
+            <b>₹ 161</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem item">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\7.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Orion Turtle Corn Chips</h3>
+          <p>60 g</p>
+          <div class="price-btn">
+            <b>₹ 75</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headingSection">
+      <h2>Cold Drinks & Juices</h2>
+      <a href="#">See all</a>
+    </div>
+
+    <div id="products">
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK1.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Coca Cola Soft Milk - Pack of 2</h3>
+          <p>2x750ml</p>
+          <div class="price-btn">
+            <b>₹ 75</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK2.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Thums up Soft Drink</h3>
+          <p>750 ml</p>
+          <div class="price-btn">
+            <b>₹ 40</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK3.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Limca Lemon-N Lime Soft Drinks</h3>
+          <p>750 ml</p>
+          <div class="price-btn">
+            <b>₹ 40</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK4.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Frooti Mango Drinks</h3>
+          <p>125 ml</p>
+          <div class="price-btn">
+            <b>₹ 10</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK5.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Coca-cola Diet Soft Drink </h3>
+          <p>300 ml</p>
+          <div class="price-btn">
+            <b>₹ 40</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem item">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\DRINK6.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Fresh Jalzira Water With Lime</h3>
+          <p>300 ml</p>
+          <div class="price-btn">
+            <b>₹ 30</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="headingSection">
+      <h2>Candies & Gums</h2>
+      <a href="#">See all</a>
+    </div>
+
+    <div id="products">
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI2.avif" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Parle Melody Chocolaty Candy </h3>
+          <p>195 g</p>
+          <div class="price-btn">
+            <b>₹ 50</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI1.avif" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Chupa chup Sore Bits Mixed Fruits Chocolaty candy</h3>
+          <p>70 g</p>
+          <div class="price-btn">
+            <b>₹ 30</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI3.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Alphenlibe Eclairs Plus Carimel Tofee Pack</h3>
+          <p>135 g</p>
+          <div class="price-btn">
+            <b>₹ 34</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI4.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Chupa chup Sore Bits Belt Mixed Fruits Chocolaty candy</h3>
+          <p>130 g</p>
+          <div class="price-btn">
+            <b>₹ 45</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI5.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Fruitila Stroberry Flavered Chew Tofee</h3>
+          <p>140 g</p>
+          <div class="price-btn">
+            <b>₹ 44</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="productItem item">
+        <div id="productimg">
+          <img src="D:\1sthtml\blinkit\blinkitimg\CANDI6.avif" alt="" width="70%">
+          <p>8 min</p>
+        </div>
+        <div class="productInfo">
+          <h3>Candyman Tofico Strawberry Flavered Candy</h3>
+          <p>120 g</p>
+          <div class="price-btn">
+            <b>₹ 75</b>
+            <button>Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <div id="footer-mid">
+      <div id="footer-row1">
+        <div id="footer-row1-left">
+          <h3>Useful Links</h3>
+          <div id="useful-links">
+            <ul>
+              <li> <a href="">About</a></li>
+              <li> <a href="">Careers</a></li>
+              <li> <a href="">Blog</a></li>
+              <li> <a href="">Press</a></li>
+              <li> <a href="">Lead</a></li>
+              <li> <a href="">Value</a></li>
+            </ul>
+            <ul>
+              <li> <a href="">Privacy</a></li>
+              <li> <a href="">Terms</a></li>
+              <li> <a href="">FAQs</a></li>
+              <li> <a href="">Security</a></li>
+              <li> <a href="">Mobile</a></li>
+              <li> <a href="">Contact</a></li>
+            </ul>
+            <ul>
+              <li> <a href="">Partner</a></li>
+              <li> <a href="">Franchise</a></li>
+              <li> <a href="">Seller</a></li>
+              <li> <a href="">Warehouse</a></li>
+              <li> <a href="">Deliver</a></li>
+              <li> <a href="">Resources</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="footer-row1-right">
+          <div class="catagoriesheading">
+            <h3>Catagories</h3>
+            <a href="">See all</a>
+          </div>
+          <ul type="col" class="FooterLinks__List">
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/fresh-vegetables/cid/1487/1489">Vegetables
+                &amp; Fruits</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/milk/cid/14/922">Dairy &amp; Breakfast</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/chips-crisps/cid/1237/940">Munchies</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/beverages-gift-packs/cid/332/1323">Cold
+                Drinks &amp; Juices</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/noodles/cid/15/962">Instant &amp; Frozen
+                Food</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/tea/cid/12/957">Tea, Coffee &amp; Health
+                Drinks</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/biscuit-gift-pack/cid/888/2380">Bakery
+                &amp; Biscuits</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/indian-sweets/cid/9/943">Sweet Tooth</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/atta/cid/16/1165">Atta, Rice &amp; Dal</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/oil/cid/1557/917">Dry Fruits, Masala &amp;
+                Oil</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/tomato-chilli-ketchup/cid/972/277">Sauces
+                &amp; Spreads</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/fresh-meat/cid/4/1201">Chicken, Meat &amp;
+                Fish</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/cigarettes/cid/229/1948">Paan Corner</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/oil-ghee/cid/175/799">Organic &amp;
+                Premium</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/diapers-more/cid/7/1000">Baby Care</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/sexual-wellness/cid/287/741">Pharma &amp;
+                Wellness</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/fresheners/cid/18/1085">Cleaning
+                Essentials</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/kitchen-dining-needs/cid/1379/1052">Home
+                &amp; Office</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/sticks/cid/1969/263">Ice Creams &amp;
+                Frozen Desserts</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a
+                href="/cn/face-body-moisturizers/cid/163/690">Personal Care</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/accessories-other-supplies/cid/5/3609">Pet
+                Care</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/body-skin-care/cid/13/206">Beauty &amp;
+                Cosmetics</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a
+                href="/cn/current-affairs-business/cid/851/1015">Magazines</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/bags/cid/5305/120">Fashion &amp;
+                Accessories</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/appliances/cid/5159/1886">Electronics
+                &amp; Electricals</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/arts-crafts/cid/5515/5516">Stationery
+                Needs</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/childrens-books/cid/1559/273">Books</a>
+            </li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/cn/action-figures/cid/675/397">Toys &amp;
+                Games</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a
+                href="/dc/navratri-specials?collection_uuid=OTg3NjU0MzIxMjM0NTM0NTY=">Navratri Specials</a></li>
+            <li class="FooterLinks__ListItem-sc-12rhzht-3 BvTiN"><a href="/print">Print Store</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div id="footer-row2">
+      <p>© Blink Commerce Private Limited, 2016-2025</p>
+      <div id="appimg">
+        <h5>Download App</h5>
+        <img src="C:\Users\HP\Downloads\blinkitimg\appimg.webp" alt="" width="100px">
+        <img src="C:\Users\HP\Downloads\blinkitimg\appim2.webp" alt="" width="100px">
+      </div>
+      <div id="socialicon">
+        <i class="fa-brands fa-facebook" width="100px"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-square-threads"></i>
+      </div>
+    </div>
+    <div id="footer-row3">
+      <p>“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected
+        in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone
+        Consultancy Services Private Limited”.</p>
+    </div>
+    </div>
+  </footer>
+
+  <script src="blinkit.js"></script>
+</body>
+
+</html>

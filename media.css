@@ -1,0 +1,133 @@
+/* this is for moblie */
+@media only screen and (min-width:200px) and (max-width:575px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  #logo {
+    padding: 7px;
+  }
+
+  #location {
+    padding: 13px 10px;
+  }
+
+  #location h3 {
+    font-size: 18px;
+  }
+
+  #location p {
+    font-size: 13px;
+  }
+
+  #headerSearch button {
+    padding: 10px;
+  }
+
+  #headerbtn {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    margin-right: 0px;
+    background-color: white;
+    justify-content: center;
+  }
+
+  #banner {
+    display: none;
+  }
+
+  #orderbanner {
+    flex-direction: column;
+  }
+
+  #catagoryItems {
+    flex-basis: 25%;
+  }
+  #productSection {
+    padding: 10px 10px;
+  }
+
+  #products{
+    margin: 10px 0px;
+  }
+  .productItem{
+    flex-basis: 49%;
+  }
+
+  footer{
+    padding: 0px;
+  }
+  #footer-row1-left{
+   width: 100%;
+  }
+  #footer-row1{
+    flex-direction: column;
+  }
+  .FooterLinks__List li{
+    margin-bottom:10px ;
+    flex-basis: 48%;
+  }
+  .FooterLinks__List li a{
+    margin-bottom: 5px;
+  }
+  #footer-row3{
+    padding: 0px 5px;
+    margin-bottom: 50px;
+  }
+
+  #footer-row2{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #location-box{
+    margin-left: 0px;
+    max-width: 400px;
+    height: 100px;
+  }
+  #location-box-content{
+    gap: 2px;
+  }
+  #location-box-content button{
+    padding: 8px 30px;
+    font-size: 10px;
+    left: 0px;
+  }
+
+  #location-box-content input{
+    padding: 4px;
+  }
+
+  #login-box{
+    top: 0%;
+    left: 0%;
+    width: 400px;
+    height: 385px;
+    gap: 7px;
+  }
+  #login-box p{
+    padding: 10px 15px;
+  }
+
+  #cart-collection{
+    top: 0%;
+    left: 0%;
+    width: 400px;
+    height: 380px;
+  }
+
+}
+
+
+
+/* this is for tablate */
+@media only screen and (min-width:575px) and (max-width:991px) {
+  * {
+    background-color: rgb(0, 255, 21);
+  }
+
+}
