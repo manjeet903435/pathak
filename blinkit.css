@@ -138,7 +138,7 @@ header {
 
 #catagories {
     max-width: 1280px;
-    margin: 10px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -233,11 +233,18 @@ header {
 }
 
 .price-btn button {
-    padding: 5px 15px;
+    padding: 10px 15px 10px 15px;
     border: 1px solid rgb(6, 117, 58);
-    color: green;
+    color: white;
     border-radius: 8px;
     cursor: pointer;
+    background-color: rgb(10, 190, 49);
+    border: none;
+    transition: .2s all ease;
+}
+
+.price-btn button:hover {
+    background-color: rgb(12, 131, 31);
 }
 
 footer {
